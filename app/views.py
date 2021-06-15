@@ -1,8 +1,9 @@
 from app import app
+from flask import render_template
 
 @app.route("/")
 def index():
-	return "Welcome page"
+	return render_template("index.html")
 @app.route("/resan")
 def resan():
 	return "Resume Analyzer"
