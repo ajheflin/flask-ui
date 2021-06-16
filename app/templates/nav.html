@@ -1,5 +1,21 @@
-<ul>
-	<li>Test1</li>
-	<li>Test2</li>
-	<li>Test3</li>
-</ul>
+<!-- Begin navbar -->
+				<nav>
+					<ul>
+						<div class="row">
+							<div class="col-lg-4">
+								<li>
+									<h1 onclick="document.location.href = '/index/'" style="cursor: pointer;">Resume Analyzer</h1>
+								</li>
+							</div>
+							<div class="col-lg-1">
+								<!-- Offset -->
+							</div>
+							<!-- if you're reading this in-browser, it's too late. look at the python for further explanation -->
+							<!-- for loop for printing pagelinks  -->
+							{% for i, page in pages %}
+							<div class="col-lg-{{col_width}} {%if selected == page %}selected{%endif%}"><li><a href="/{{page}}/">{{readable[i]}}</a></li></div>
+							{%endfor%}
+						</div>
+					</ul>
+				</nav>
+				<!-- End navbar -->
