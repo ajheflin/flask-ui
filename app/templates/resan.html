@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume Analyzer - Welcome</title>
+		{% include 'imports.html' %}
+		<script type="text/javascript">
+			function showFiletypeError(fileNameSplit) {
+				$("#error").text("The file you submitted is of filetype ." + fileNameSplit[fileNameSplit.length - 1] + ", it needs to be of type .pdf").css("display", "block");
+			};
+			function showNoFileError() {
+				$("#error").text("You must select a file to submit!").css("display", "block");
+			}
+			function validate(e) {
+				if($("#file").val() != "") {
+					let fileNameSplit = $("#file").val().split(".")
+					if(fileNameSplit[fileNameSplit.length - 1] != "pdf") {
+						e.preventDefault();
+						showFiletypeError(fileNameSplit);
+					} else {
+						$("#form").submit();
+					};
+				} else {
+					e.preventDefault();
+					showNoFileError();
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<!-- Import nav here -->
+				{% include 'nav.html' %}
+			</nav>
+		</header>
+		<main>
+			<h1>Resume Analyzer</h1>
+			<p>Please upload a resume to be analyzed:</p>
+			<form action="/upload" method="POST" onsubmit="validate(event)" id="form" enctype="multipart/form-data">
+				<label for="resume">Resume File:&nbsp;&nbsp;&nbsp;</label><input type="file" name="file" id="file"><br /><br />
+				<p id="error" style="display: none; color: red;"></p>
+				<input type="submit">
+			</form>
+		</main>
+	</body>
+</html>

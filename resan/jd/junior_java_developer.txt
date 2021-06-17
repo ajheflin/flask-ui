@@ -1,0 +1,18 @@
+Jr. Java Developer posts:
+The Must-Haves: To be considered for this position, you must minimally meet the knowledge, skills, and abilities listed below 
+Must currently reside in the US 
+<Must be able to obtain a US security clearance> OR <Must currently possess a US security clearance> 
+Must have a Bachelor’s Degree in <discipline> 
+Experience: minimum of <X> years of relevant technical or business work experience 
+<List specific Job Title or Project-Required Skills as bullets> 
+B.S. in computer science or technical/related field or equivalent experience. 
+Software development experience in one or more general purpose programming languages including but not limited to:  
+C#,  
+Java,  
+C/C++,  
+Objective C,  
+Python,  
+JavaScript 
+Writing queries and APIs to communicate with other systems. 
+Working proficiency and communication skills in verbal and written English. 
+Ability to communicate effectively to both technical and non-technical roles. 

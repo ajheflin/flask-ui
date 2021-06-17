@@ -1,0 +1,13 @@
+
+Python Groove project (NLP)
+	The purpose of this project is to train a machine learning model to recognize quality resumes for the purpose of increasing the efficiency of the hiring process.
+
+
+dependencies:
+	see dependencies.txt
+
+
+we need:
+
+
+

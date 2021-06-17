@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume Analyzer - Detail For {{name}}</title>
+		{% include 'imports.html' %}
+	</head>
+	<body>
+		<header>
+			<nav>
+				<!-- Import nav here -->
+				{% include 'nav.html' %}
+			</nav>
+		</header>
+		<main>
+			<div class="row">
+				<div class="col-lg-6">
+		      <h1>Details for Applicant: {{name}}</h1>
+		      <p>Degree: {{degree}}</p>
+		      <p>Position Applied For: {{position}}</p>
+					<p>Match: {{isMatch}}</p>
+					<p>Experience Score: {{score}}</p>
+					<p>Experience Score Range: {{min}}-{{max}}</p>
+				</div>
+				<div class="col-lg-6">
+					<h2>Skills: </h2>
+					{% for skill, skillx in skills %}
+					<p>{{skillx}} years of experience with {{skill}}</p>
+					{% endfor %}
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
