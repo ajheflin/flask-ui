@@ -3,9 +3,8 @@ nav ul {
   padding: 0;
 }
 nav {
-  color: red;
-  background-color: #242633;
-  color: white;
+  background-color: #71A1FF;
+  color: #DCD4FF;
   padding: 2vh 2vw;
 }
 nav ul {
@@ -25,7 +24,7 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
-  color: #4797db;
+  color: #1B66FB;
   text-decoration: none;
   font-weight: bold;
   -webkit-transition: .3s all ease-in-out;
@@ -33,7 +32,7 @@ nav a {
   transition: .3s all ease-in-out;
 }
 nav a:hover {
-  color: white;
+  color: #DCD4FF;
 }
 nav a::after {
   position: absolute;
@@ -41,7 +40,7 @@ nav a::after {
   left: 50%;
   transform: translateX(-50%);
   width: 0;
-  background-color: white;
+  background-color: #DCD4FF;
   height: 2px;
   display: block;
   content: "";
@@ -54,5 +53,5 @@ nav a:hover::after {
 }
 nav div.selected a {
   pointer-events: none;
-  color: white;
+  color: #DCD4FF;
 }
